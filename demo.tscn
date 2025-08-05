@@ -11,15 +11,16 @@
 [node name="MainMenu" parent="CanvasLayer" node_paths=PackedStringArray("options_menu", "level_select_menu") instance=ExtResource("1_a6njw")]
 options_menu = NodePath("../OptionsMenu")
 level_select_menu = NodePath("../LevelSelectMenu")
+show_version = true
 
 [node name="LevelSelectButton" parent="CanvasLayer/MainMenu/VBoxContainer" index="1" node_paths=PackedStringArray("submenu")]
 submenu = NodePath("../../../LevelSelectMenu")
 
-[node name="OptionsButton" parent="CanvasLayer/MainMenu/VBoxContainer" index="2" node_paths=PackedStringArray("submenu")]
-submenu = NodePath("../../../OptionsMenu")
-
-[node name="LoadButton" parent="CanvasLayer/MainMenu/VBoxContainer" index="3"]
+[node name="LoadButton" parent="CanvasLayer/MainMenu/VBoxContainer" index="2"]
 visible = false
+
+[node name="OptionsButton" parent="CanvasLayer/MainMenu/VBoxContainer" index="3" node_paths=PackedStringArray("submenu")]
+submenu = NodePath("../../../OptionsMenu")
 
 [node name="OptionsMenu" parent="CanvasLayer" node_paths=PackedStringArray("parent_button") instance=ExtResource("2_8rpx1")]
 parent_button = NodePath("../MainMenu/VBoxContainer/OptionsButton")

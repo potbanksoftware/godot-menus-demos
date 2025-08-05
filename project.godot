@@ -8,6 +8,12 @@
 
 config_version=5
 
+
+[addons]
+
+AutoExportVersion/version_config_file="res://addons/AutoExportVersion/auto_export_version_config_file.gd"
+
+
 [application]
 
 config/name="Godot Menus Demos"

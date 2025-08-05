@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://cysptcyti5ccd"]
+[gd_scene load_steps=6 format=3 uid="uid://cysptcyti5ccd"]
 
 [ext_resource type="PackedScene" uid="uid://bjwrm44aqba7h" path="res://addons/godot-menus/main_menu.tscn" id="1_a6njw"]
 [ext_resource type="PackedScene" uid="uid://b1pg8555kpwtu" path="res://addons/godot-menus/options_menu.tscn" id="2_8rpx1"]
+[ext_resource type="PackedScene" uid="uid://c8dnp5xyp1r60" path="res://addons/godot-menus/menu_buttons/submenu_button.tscn" id="2_yqonw"]
 [ext_resource type="PackedScene" uid="uid://bcjgmhbwssv17" path="res://addons/godot-menus/level_select_menu.tscn" id="3_20s6v"]
+[ext_resource type="PackedScene" uid="uid://d3a7drnliy5gf" path="res://submenu_example.tscn" id="5_spssb"]
 
 [node name="Demo" type="Node2D"]
 
@@ -22,6 +24,11 @@ visible = false
 [node name="OptionsButton" parent="CanvasLayer/MainMenu/VBoxContainer" index="3" node_paths=PackedStringArray("submenu")]
 submenu = NodePath("../../../OptionsMenu")
 
+[node name="SubmenuButton" parent="CanvasLayer/MainMenu/VBoxContainer" index="4" node_paths=PackedStringArray("menu", "submenu") instance=ExtResource("2_yqonw")]
+layout_mode = 2
+menu = NodePath("../..")
+submenu = NodePath("../../../SubmenuExample")
+
 [node name="OptionsMenu" parent="CanvasLayer" node_paths=PackedStringArray("parent_button") instance=ExtResource("2_8rpx1")]
 parent_button = NodePath("../MainMenu/VBoxContainer/OptionsButton")
 
@@ -30,6 +37,9 @@ visible = false
 
 [node name="LevelSelectMenu" parent="CanvasLayer" node_paths=PackedStringArray("parent_button") instance=ExtResource("3_20s6v")]
 parent_button = NodePath("../MainMenu/VBoxContainer/LevelSelectButton")
+
+[node name="SubmenuExample" parent="CanvasLayer" node_paths=PackedStringArray("parent_button") instance=ExtResource("5_spssb")]
+parent_button = NodePath("../MainMenu/VBoxContainer/SubmenuButton")
 
 [editable path="CanvasLayer/MainMenu"]
 [editable path="CanvasLayer/OptionsMenu"]

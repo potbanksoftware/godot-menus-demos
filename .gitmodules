@@ -4,3 +4,7 @@
 [submodule "addons/godot-helpers"]
 	path = addons/godot-helpers
 	url = https://github.com/potbanksoftware/godot-helpers
+[submodule "addons/debug_menu"]
+	path = addons/debug_menu
+	url = https://github.com/potbanksoftware/godot-debug-menu
+	branch = no-subdirectory

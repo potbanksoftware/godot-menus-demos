@@ -1,0 +1,3 @@
+[submodule "addons/godot-menus"]
+	path = addons/godot-menus
+	url = https://github.com/potbanksoftware/godot-menus

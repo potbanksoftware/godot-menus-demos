@@ -27,8 +27,7 @@ shape = SubResource("CircleShape2D_mi2p7")
 [node name="PauseMenu" parent="CanvasLayer" node_paths=PackedStringArray("options_menu", "level_select_menu") instance=ExtResource("3_0isqk")]
 options_menu = NodePath("OptionsMenu")
 level_select_menu = NodePath("LevelSelectMenu")
-has_title = false
-back_action = &"menu_close"
+main_menu_scene = &"res://demo.tscn"
 
 [node name="OptionsMenu" parent="CanvasLayer/PauseMenu" node_paths=PackedStringArray("parent_button") instance=ExtResource("4_tkcxc")]
 layout_mode = 1

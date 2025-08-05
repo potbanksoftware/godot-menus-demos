@@ -29,11 +29,19 @@ options_menu = NodePath("OptionsMenu")
 level_select_menu = NodePath("LevelSelectMenu")
 main_menu_scene = &"res://demo.tscn"
 
+[node name="LevelSelectButton" parent="CanvasLayer/PauseMenu/VBoxContainer" index="1" node_paths=PackedStringArray("submenu")]
+submenu = NodePath("../../LevelSelectMenu")
+
+[node name="OptionsButton" parent="CanvasLayer/PauseMenu/VBoxContainer" index="4" node_paths=PackedStringArray("submenu")]
+submenu = NodePath("../../OptionsMenu")
+
 [node name="OptionsMenu" parent="CanvasLayer/PauseMenu" node_paths=PackedStringArray("parent_button") instance=ExtResource("4_tkcxc")]
+visible = false
 layout_mode = 1
 parent_button = NodePath("../VBoxContainer/OptionsButton")
 
 [node name="LevelSelectMenu" parent="CanvasLayer/PauseMenu" node_paths=PackedStringArray("parent_button") instance=ExtResource("5_qlnm7")]
+visible = false
 layout_mode = 1
 parent_button = NodePath("../VBoxContainer/LevelSelectButton")
 

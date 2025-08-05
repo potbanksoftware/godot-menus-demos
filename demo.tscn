@@ -12,7 +12,13 @@
 options_menu = NodePath("../OptionsMenu")
 level_select_menu = NodePath("../LevelSelectMenu")
 
-[node name="LoadButton" parent="CanvasLayer/MainMenu/VBoxContainer" index="2"]
+[node name="LevelSelectButton" parent="CanvasLayer/MainMenu/VBoxContainer" index="1" node_paths=PackedStringArray("submenu")]
+submenu = NodePath("../../../LevelSelectMenu")
+
+[node name="OptionsButton" parent="CanvasLayer/MainMenu/VBoxContainer" index="2" node_paths=PackedStringArray("submenu")]
+submenu = NodePath("../../../OptionsMenu")
+
+[node name="LoadButton" parent="CanvasLayer/MainMenu/VBoxContainer" index="3"]
 visible = false
 
 [node name="OptionsMenu" parent="CanvasLayer" node_paths=PackedStringArray("parent_button") instance=ExtResource("2_8rpx1")]

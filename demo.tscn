@@ -41,5 +41,15 @@ parent_button = NodePath("../MainMenu/VBoxContainer/LevelSelectButton")
 [node name="SubmenuExample" parent="CanvasLayer" node_paths=PackedStringArray("parent_button") instance=ExtResource("5_spssb")]
 parent_button = NodePath("../MainMenu/VBoxContainer/SubmenuButton")
 
+[node name="LinkButton" type="LinkButton" parent="CanvasLayer"]
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 356.0
+offset_bottom = 50.0
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "View source on GitHub"
+uri = "https://github.com/potbanksoftware/godot-menus-demos"
+
 [editable path="CanvasLayer/MainMenu"]
 [editable path="CanvasLayer/OptionsMenu"]

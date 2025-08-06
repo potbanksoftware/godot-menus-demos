@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://vlbsr7wubc5"]
+
+[ext_resource type="PackedScene" uid="uid://b1pg8555kpwtu" path="res://addons/godot-menus/options_menu.tscn" id="1_2w25u"]
+[ext_resource type="AudioStream" uid="uid://co6xci1qe1h6a" path="res://Fireplace Sound loop/fire.ogg" id="2_wsvlu"]
+[ext_resource type="AudioStream" uid="uid://bjk1s2bvv1ysy" path="res://Laser/laserthing.ogg" id="3_qo0wk"]
+
+[node name="OptionsMenu" instance=ExtResource("1_2w25u")]
+
+[node name="TouchControlsCheckBox" parent="VBoxContainer" index="7"]
+visible = false
+
+[node name="SFXAmbient" parent="." index="1"]
+stream = ExtResource("2_wsvlu")
+
+[node name="SFXAction" parent="." index="2"]
+stream = ExtResource("3_qo0wk")
+volume_db = 2.0

@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://cysptcyti5ccd"]
 
 [ext_resource type="PackedScene" uid="uid://bjwrm44aqba7h" path="res://addons/godot-menus/main_menu.tscn" id="1_a6njw"]
-[ext_resource type="PackedScene" uid="uid://b1pg8555kpwtu" path="res://addons/godot-menus/options_menu.tscn" id="2_8rpx1"]
 [ext_resource type="PackedScene" uid="uid://c8dnp5xyp1r60" path="res://addons/godot-menus/menu_buttons/submenu_button.tscn" id="2_yqonw"]
 [ext_resource type="PackedScene" uid="uid://bcjgmhbwssv17" path="res://addons/godot-menus/level_select_menu.tscn" id="3_20s6v"]
+[ext_resource type="PackedScene" uid="uid://vlbsr7wubc5" path="res://options_menu.tscn" id="3_bspmp"]
 [ext_resource type="PackedScene" uid="uid://d3a7drnliy5gf" path="res://submenu_example.tscn" id="5_spssb"]
 
 [node name="Demo" type="Node2D"]
@@ -27,11 +27,8 @@ layout_mode = 2
 menu = NodePath("../..")
 submenu = NodePath("../../../SubmenuExample")
 
-[node name="OptionsMenu" parent="CanvasLayer" node_paths=PackedStringArray("parent_button") instance=ExtResource("2_8rpx1")]
+[node name="OptionsMenu" parent="CanvasLayer" node_paths=PackedStringArray("parent_button") instance=ExtResource("3_bspmp")]
 parent_button = NodePath("../MainMenu/VBoxContainer/OptionsButton")
-
-[node name="TouchControlsCheckBox" parent="CanvasLayer/OptionsMenu/VBoxContainer" index="7"]
-visible = false
 
 [node name="LevelSelectMenu" parent="CanvasLayer" node_paths=PackedStringArray("parent_button") instance=ExtResource("3_20s6v")]
 parent_button = NodePath("../MainMenu/VBoxContainer/LevelSelectButton")
@@ -50,4 +47,3 @@ text = "View source on GitHub"
 uri = "https://github.com/potbanksoftware/godot-menus-demos"
 
 [editable path="CanvasLayer/MainMenu"]
-[editable path="CanvasLayer/OptionsMenu"]

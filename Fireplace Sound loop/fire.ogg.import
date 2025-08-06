@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://co6xci1qe1h6a"
+path="res://.godot/imported/fire.ogg-6c79f0d0be8188c8ee9e51330b1642f1.oggvorbisstr"
+
+[deps]
+
+source_file="res://Fireplace Sound loop/fire.ogg"
+dest_files=["res://.godot/imported/fire.ogg-6c79f0d0be8188c8ee9e51330b1642f1.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

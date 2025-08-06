@@ -33,14 +33,13 @@ submenu = NodePath("../../LevelSelectMenu")
 [node name="OptionsButton" parent="CanvasLayer/PauseMenu/VBoxContainer" index="4" node_paths=PackedStringArray("submenu")]
 submenu = NodePath("../../OptionsMenu")
 
-[node name="OptionsMenu" parent="CanvasLayer/PauseMenu" node_paths=PackedStringArray("parent_button") instance=ExtResource("4_tkcxc")]
-visible = false
-layout_mode = 1
-parent_button = NodePath("../VBoxContainer/OptionsButton")
-
 [node name="LevelSelectMenu" parent="CanvasLayer/PauseMenu" node_paths=PackedStringArray("parent_button") instance=ExtResource("5_qlnm7")]
 visible = false
 layout_mode = 1
 parent_button = NodePath("../VBoxContainer/LevelSelectButton")
+
+[node name="OptionsMenu" parent="CanvasLayer/PauseMenu" node_paths=PackedStringArray("parent_button") instance=ExtResource("4_tkcxc")]
+layout_mode = 1
+parent_button = NodePath("../VBoxContainer/OptionsButton")
 
 [editable path="CanvasLayer/PauseMenu"]

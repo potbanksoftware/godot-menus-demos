@@ -24,9 +24,7 @@ shape = SubResource("CircleShape2D_mi2p7")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="PauseMenu" parent="CanvasLayer" node_paths=PackedStringArray("options_menu", "level_select_menu") instance=ExtResource("3_0isqk")]
-options_menu = NodePath("OptionsMenu")
-level_select_menu = NodePath("LevelSelectMenu")
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("3_0isqk")]
 main_menu_scene = &"res://demo.tscn"
 
 [node name="LevelSelectButton" parent="CanvasLayer/PauseMenu/VBoxContainer" index="1" node_paths=PackedStringArray("submenu")]

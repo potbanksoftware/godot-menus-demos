@@ -10,9 +10,7 @@
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="MainMenu" parent="CanvasLayer" node_paths=PackedStringArray("options_menu", "level_select_menu") instance=ExtResource("1_a6njw")]
-options_menu = NodePath("../OptionsMenu")
-level_select_menu = NodePath("../LevelSelectMenu")
+[node name="MainMenu" parent="CanvasLayer" instance=ExtResource("1_a6njw")]
 show_version = true
 
 [node name="LevelSelectButton" parent="CanvasLayer/MainMenu/VBoxContainer" index="1" node_paths=PackedStringArray("submenu")]

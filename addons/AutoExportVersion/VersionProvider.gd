@@ -4,6 +4,7 @@ extends RefCounted
 ## You can use the arguments to customize your version, for example based on selected platform. [br]
 ## Several utility methods are provided for the most common use cases. You can simply uncomment one
 ## of the lines in this method or combine them in any way.
+@warning_ignore("unused_parameter")
 func get_version(features: PackedStringArray, is_debug: bool, path: String, flags: int) -> String:
 	return ""
 

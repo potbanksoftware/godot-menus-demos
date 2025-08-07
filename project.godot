@@ -26,6 +26,11 @@ GodotHelpersUtils="*res://addons/godot-helpers/utils.gd"
 Controller="*res://addons/godot-helpers/controller/controller.gd"
 DebugMenu="*res://addons/debug_menu/debug_menu.tscn"
 
+[debug]
+
+gdscript/warnings/exclude_addons=false
+gdscript/warnings/untyped_declaration=1
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/AutoExportVersion/plugin.cfg", "res://addons/debug_menu/plugin.cfg", "res://addons/godot-helpers/plugin.cfg")
